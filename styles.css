@@ -1,0 +1,111 @@
+body {
+  font-family: "Muli", sans-serif;
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.918);
+  padding: 0px 10px 10px 10px;
+
+  background: url(./survey-form-background.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.background {
+  background-color: rgba(120, 108, 226, 0.69);
+}
+
+#title {
+  text-align: center;
+  padding-top: 40px;
+}
+
+#description {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+#form-container {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  width: 700px;
+}
+
+label {
+  display: block;
+  margin: 20;
+}
+
+#survey-form {
+  font-size: 1.3em;
+  text-align: left;
+  padding: 50px;
+  background-color: rgba(39, 36, 58, 0.89);
+  color: white;
+  border-radius: 3px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+  font-size: 1em;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: none;
+  /* margin: 6px auto 25px auto;  */
+}
+
+textarea {
+  font-size: 1em;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  margin: 6px auto 25px auto;
+}
+::placeholder {
+  font-family: "Muli", sans-serif;
+}
+
+#submit {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%;
+  font-size: 1em;
+  background-color: #0eed6e99;
+  border: none;
+  color: white;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+  margin: 10px 15px 10px 5px;
+  padding: 0px;
+}
+
+.style-label {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 756px) {
+  #form-container {
+    max-width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #survey-form {
+    font-size: 1.2em;
+    padding: 50px 20px;
+    max-width: 80vw;
+  }
+}
